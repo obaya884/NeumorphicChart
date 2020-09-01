@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		66E6482424FE1A93008544DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E6482224FE1A93008544DC /* Main.storyboard */; };
 		66E6482624FE1A95008544DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E6482524FE1A95008544DC /* Assets.xcassets */; };
 		66E6482924FE1A95008544DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E6482724FE1A95008544DC /* LaunchScreen.storyboard */; };
+		66E6483124FE1ABB008544DC /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6483024FE1ABB008544DC /* ChartView.swift */; };
+		66E6483324FE1B6D008544DC /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E6483224FE1B6D008544DC /* UIColor+hex.swift */; };
+		66E6483624FE2828008544DC /* EMTNeumorphicView in Frameworks */ = {isa = PBXBuildFile; productRef = 66E6483524FE2828008544DC /* EMTNeumorphicView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		66E6482524FE1A95008544DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66E6482824FE1A95008544DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66E6482A24FE1A95008544DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E6483024FE1ABB008544DC /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		66E6483224FE1B6D008544DC /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E6483624FE2828008544DC /* EMTNeumorphicView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +66,11 @@
 				66E6481E24FE1A93008544DC /* SceneDelegate.swift */,
 				66E6482024FE1A93008544DC /* ViewController.swift */,
 				66E6482224FE1A93008544DC /* Main.storyboard */,
+				66E6483024FE1ABB008544DC /* ChartView.swift */,
 				66E6482524FE1A95008544DC /* Assets.xcassets */,
 				66E6482724FE1A95008544DC /* LaunchScreen.storyboard */,
 				66E6482A24FE1A95008544DC /* Info.plist */,
+				66E6483224FE1B6D008544DC /* UIColor+hex.swift */,
 			);
 			path = NeumorphicChart;
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = NeumorphicChart;
+			packageProductDependencies = (
+				66E6483524FE2828008544DC /* EMTNeumorphicView */,
+			);
 			productName = NeumorphicChart;
 			productReference = 66E6481924FE1A93008544DC /* NeumorphicChart.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 66E6481024FE1A93008544DC;
+			packageReferences = (
+				66E6483424FE2827008544DC /* XCRemoteSwiftPackageReference "EMTNeumorphicView" */,
+			);
 			productRefGroup = 66E6481A24FE1A93008544DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +154,9 @@
 			files = (
 				66E6482124FE1A93008544DC /* ViewController.swift in Sources */,
 				66E6481D24FE1A93008544DC /* AppDelegate.swift in Sources */,
+				66E6483324FE1B6D008544DC /* UIColor+hex.swift in Sources */,
 				66E6481F24FE1A93008544DC /* SceneDelegate.swift in Sources */,
+				66E6483124FE1ABB008544DC /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66E6483424FE2827008544DC /* XCRemoteSwiftPackageReference "EMTNeumorphicView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hirokimu/EMTNeumorphicView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66E6483524FE2828008544DC /* EMTNeumorphicView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66E6483424FE2827008544DC /* XCRemoteSwiftPackageReference "EMTNeumorphicView" */;
+			productName = EMTNeumorphicView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 66E6481124FE1A93008544DC /* Project object */;
 }
